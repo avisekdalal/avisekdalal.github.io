@@ -60,3 +60,45 @@ footer {
 .btn:hover {
   background-color: #003366;
 }
+.recommendation {
+  background: #f0f8ff;
+  border-left: 5px solid #004080;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.recommendation .profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.recommendation h3 {
+  margin: 0;
+}
+
+.recommendation blockquote {
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
+}
+.recommendation {
+  background: #f0f8ff;
+  border-left: 5px solid #004080;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-img-right {
+  float: right;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: -10px;
+}
