@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OpenWeatherMap API Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 1000px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3, h4 {
+      color: #004080;
+    }
+    pre {
+      background-color: #eee;
+      padding: 12px;
+      overflow-x: auto;
+      border-left: 4px solid #004080;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #e8f1f8;
+    }
+  </style>
+</head>
+<body>
+  <h1>OpenWeatherMap API Documentation</h1>
+  <p>This API provides access to current weather data, forecasts, and historical weather for any location worldwide.</p>
+
+  <h2>Base URL</h2>
+  <pre>https://api.openweathermap.org/data/2.5/</pre>
+
+  <h2>Authentication</h2>
+  <p>All requests require an API key.</p>
+  <pre>appid=YOUR_API_KEY</pre>
+
+  <h2>🌤️ Current Weather Data</h2>
+  <h3>GET /weather</h3>
+  <p>Retrieve current weather by city, lat/lon, or zip.</p>
+
+  <h4>Example:</h4>
+  <pre>GET https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=YOUR_API_KEY&units=metric</pre>
+
+  <h4>Sample Response:</h4>
+  <pre>{
+  "weather": [{"main": "Clouds", "description": "broken clouds"}],
+  "main": { "temp": 22.5, "humidity": 63 },
+  "wind": { "speed": 3.6 },
+  "name": "Toronto"
+}</pre>
+
+  <h2>🌦️ 5-Day Forecast</h2>
+  <h3>GET /forecast</h3>
+  <pre>GET https://api.openweathermap.org/data/2.5/forecast?q=Toronto&appid=YOUR_API_KEY&units=metric</pre>
+
+  <h4>Response (truncated):</h4>
+  <pre>{
+  "list": [
+    {
+      "dt_txt": "2025-07-14 09:00:00",
+      "main": { "temp": 24.1 },
+      "weather": [{ "main": "Rain", "description": "light rain" }]
+    }
+  ]
+}</pre>
+
+  <h2>❗ Common Errors</h2>
+  <table>
+    <tr><th>Code</th><th>Error</th><th>Description</th></tr>
+    <tr><td>401</td><td>Invalid API key</td><td>Check your credentials</td></tr>
+    <tr><td>404</td><td>Not found</td><td>Invalid endpoint or query</td></tr>
+    <tr><td>429</td><td>Too many requests</td><td>Rate limit exceeded</td></tr>
+  </table>
+
+  <h2>🧪 Curl Example</h2>
+  <pre>
+curl "https://api.openweathermap.org/data/2.5/weather?q=Toronto&appid=YOUR_API_KEY&units=metric"
+  </pre>
+
+  <h2>📚 References</h2>
+  <ul>
+    <li><a href="https://openweathermap.org/current" target="_blank">Official Docs</a></li>
+    <li><a href="https://home.openweathermap.org/users/sign_up" target="_blank">Sign up for API Key</a></li>
+  </ul>
+
+  <p><em>© 2025 – Created by Avisek Dalal for portfolio demonstration purposes.</em></p>
+</body>
+</html>
