@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
   <title>Portfolio | Avisek Dalal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Portfolio</h1>
+    <h1>Avisek Dalal</h1>
+    <p>Senior Technical Writer | SaaS | APIs | ERP | Cloud</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="recommendations.html">Recommendations</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Sample Documentation</h2>
-      <ul>
-        <li><strong>Whitepaper:</strong> <a href="samples/whitepapers/SaaS_Onboarding_Whitepaper.pdf" target="_blank">Streamlining SaaS Onboarding</a></li>
-        <li><strong>API Reference:</strong> <a href="samples/apidocs/Payment_API_Reference.pdf" target="_blank">Acme Payment API Documentation</a></li>
-        <li><strong>User Guide:</strong> <a href="samples/userguides/Mobile_App_UserGuide.pdf" target="_blank">Mobile App – Getting Started Guide</a></li>
-        <li><strong>FAQs:</strong> <a href="samples/faqs/Product_FAQs.pdf" target="_blank">Product Support FAQs</a></li>
-      </ul>
-    </section>
+    <h2>Writing Samples</h2>
+    <div class="portfolio-grid">
+      <div class="card">
+        <h3>SaaS Onboarding Whitepaper</h3>
+        <p>Strategy + Product Use Case</p>
+        <a class="btn" href="assets/documents/SaaS_Onboarding_Whitepaper.pdf" target="_blank">View</a>
+      </div>
+      <div class="card">
+        <h3>Payment API Reference</h3>
+        <p>REST API Documentation</p>
+        <a class="btn" href="assets/documents/Payment_API_Reference.pdf" target="_blank">View</a>
+      </div>
+    </div>
   </main>
 
   <footer>

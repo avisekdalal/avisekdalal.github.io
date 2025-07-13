@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   color: #333;
   margin: 0;
   padding: 0;
@@ -8,36 +8,91 @@ body {
 }
 
 header {
-  background-color: #004080;
-  color: #fff;
-  padding: 20px;
+  background: #004080;
+  color: white;
   text-align: center;
-}
-
-header h1 {
-  margin-bottom: 5px;
+  padding: 20px;
 }
 
 nav a {
-  color: #fff;
+  color: white;
+  text-decoration: none;
   margin: 0 10px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav .active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e8f1f8;
+}
+
+.btn, .btn-outline {
+  padding: 10px 20px;
+  margin: 10px;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.btn {
+  background-color: #004080;
+  color: white;
 }
 
-main {
-  padding: 40px;
-  max-width: 800px;
-  margin: auto;
-  background-color: #fff;
+.btn:hover {
+  background-color: #003366;
 }
 
-h2 {
+.btn-outline {
+  border: 2px solid #004080;
+  background: white;
   color: #004080;
+}
+
+.btn-outline:hover {
+  background-color: #004080;
+  color: white;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.recommendation {
+  background: #f0f8ff;
+  border-left: 5px solid #004080;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recommendation img {
+  float: right;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 15px;
 }
 
 footer {
@@ -45,60 +100,4 @@ footer {
   padding: 20px;
   background-color: #eee;
   margin-top: 40px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #004080;
-  color: white;
-  padding: 10px 20px;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  background-color: #003366;
-}
-.recommendation {
-  background: #f0f8ff;
-  border-left: 5px solid #004080;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.recommendation .profile-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  float: left;
-  margin-right: 15px;
-}
-
-.recommendation h3 {
-  margin: 0;
-}
-
-.recommendation blockquote {
-  margin-top: 10px;
-  font-style: italic;
-  color: #444;
-}
-.recommendation {
-  background: #f0f8ff;
-  border-left: 5px solid #004080;
-  padding: 20px;
-  margin: 30px 0;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.profile-img-right {
-  float: right;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-left: 15px;
-  margin-top: -10px;
 }
