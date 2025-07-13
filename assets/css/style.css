@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
+  background: #f5f7fa;
   color: #333;
   margin: 0;
   padding: 0;
@@ -14,10 +14,23 @@ header {
   padding: 20px;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
 nav a {
   color: white;
-  text-decoration: none;
   margin: 0 10px;
+  text-decoration: none;
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 4px;
@@ -28,19 +41,35 @@ nav .active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.hero {
-  text-align: center;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 60px 20px;
-  background-color: #e8f1f8;
+  background-color: white;
 }
 
-.btn, .btn-outline {
-  padding: 10px 20px;
+.light-section {
+  background-color: #e8f1f8;
+  border-radius: 10px;
+  padding: 60px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 30px;
+}
+
+.button-group .btn,
+.button-group .btn-outline {
   margin: 10px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
   display: inline-block;
+  font-weight: bold;
 }
 
 .btn {
@@ -63,95 +92,48 @@ nav .active {
   color: white;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
 .card {
   background: white;
   padding: 20px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  text-align: center;
-}
-
-.recommendation {
-  background: #f0f8ff;
-  border-left: 5px solid #004080;
-  padding: 20px;
-  margin: 30px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.recommendation img {
-  float: right;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-left: 15px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #eee;
-  margin-top: 40px;
-}
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
 }
 
 .recommendation-card {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  background: #e8f4ff;
+  align-items: center;
+  text-align: left;
+  background: white;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background-color: #f0f8ff;
 }
 
-.rec-left {
-  width: 75%;
-}
-
-.rec-right img {
+.recommendation-card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-@media (max-width: 700px) {
-  .recommendation-card {
-    flex-direction: column;
-    text-align: center;
-  }
-  .rec-left, .rec-right {
-    width: 100%;
-  }
-  .rec-right img {
-    margin-top: 15px;
-  }
+.rec-left {
+  width: 75%;
 }
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  background-color: white;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa; /* subtle grey background */
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+
+.rec-right {
+  text-align: right;
 }
