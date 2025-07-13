@@ -141,3 +141,17 @@ footer {
     margin-top: 15px;
   }
 }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: white;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa; /* subtle grey background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
