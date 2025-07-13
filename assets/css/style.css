@@ -101,3 +101,43 @@ footer {
   background-color: #eee;
   margin-top: 40px;
 }
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.recommendation-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #e8f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.rec-left {
+  width: 75%;
+}
+
+.rec-right img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .recommendation-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .rec-left, .rec-right {
+    width: 100%;
+  }
+  .rec-right img {
+    margin-top: 15px;
+  }
+}
