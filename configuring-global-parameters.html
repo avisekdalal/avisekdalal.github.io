@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Configuring Global Parameters | Infor Factory Track</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Configuring Global Parameters (Infor Factory Track)</h1>
+    <p>Technical Writing Sample by Avisek Dalal</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="container light-section">
+    <article class="document">
+      <h2>Purpose</h2>
+      <p>This procedure explains how to configure parameters that apply to all Infor Factory Track CSI transactions and forms.</p>
+
+      <h2>Steps</h2>
+      <ol>
+        <li>
+          <strong>Open the Global Parameters Form</strong><br>
+          Navigate to <strong>Configuration → Parameters → Global Parameters</strong>.<br>
+          The <em>Global Parameters</em> form is displayed.
+        </li>
+
+        <li>
+          <strong>Specify Configuration Options</strong>
+          <ul>
+            <li><strong>Kanban Implemented:</strong> Select this check box to enable Kanban functionality.<br>
+              <em>Note:</em> If not selected, Kanban processes are not supported in Factory Track.</li>
+            <li><strong>Kanban Label:</strong> Specify a label ID for Kanban labels.<br>
+              <em>Note:</em> This field appears only if “Kanban Implemented” is selected.</li>
+            <li><strong>Handling Units in Use:</strong> Select this check box to enable handling units.</li>
+            <li><strong>ERP Lot is Supplier Lot:</strong> Select this check box to automatically use the supplier’s lot number as the ERP lot number.</li>
+            <li><strong>EAN Code in Use:</strong> Select this check box to allow users to scan European Article Numbers (EAN) instead of item numbers.<br>
+              When an EAN is scanned, the corresponding item number is displayed if a match is found.</li>
+            <li><strong>ICS Code in Use:</strong> Select this check box to allow scanning of Item Code System (ICS) numbers instead of item numbers.<br>
+              When an ICS number is scanned, the related item number is displayed if a match is found.</li>
+            <li><strong>Module:</strong> Specify the module to which this parameter applies: <em>WM, TT, SF,</em> or <em>All.</em></li>
+            <li><strong>Shop Floor in Use:</strong> Select this check box to enable access to the Shop Floor module.</li>
+            <li><strong>TT Implemented:</strong> Select this check box to enable Time Track-related transactions.</li>
+            <li><strong>None:</strong> Select this check box if neither Shop Floor nor Time Track is implemented.</li>
+            <li><strong>PIN Required:</strong> Select this check box to make a PIN mandatory when employees sign in as a generic user.</li>
+            <li><strong>Restrict Movement for Pick List Serials:</strong> Select this check box to restrict consumption of serials already picked against a pick list.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Save the Configuration</strong><br>
+          Click <strong>Save</strong> to apply the global parameters.
+        </li>
+      </ol>
+
+      <h2>Notes</h2>
+      <ul>
+        <li>Only users with administrative privileges can modify these parameters.</li>
+        <li>Review configuration changes carefully to avoid module conflicts (Shop Floor, Time Track, Warehouse Management).</li>
+        <li>Document parameter settings for audit and rollback purposes.</li>
+      </ul>
+
+      <h2>Outcome</h2>
+      <p>After completing this configuration, Factory Track applies the defined parameters globally across all modules and transactions.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Avisek Dalal</p>
+  </footer>
+</body>
+</html>
