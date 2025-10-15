@@ -218,3 +218,66 @@ footer {
     max-width: 92%;
   }
 }
+/* --- Documentation layout overrides --- */
+article.document {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #000;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+  background: #fff;
+  padding: 30px 40px;
+}
+
+article.document h1,
+article.document h2,
+article.document h3 {
+  text-align: left;
+  color: #000;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+
+article.document h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+article.document ol {
+  margin-left: 1.5rem;
+  margin-top: 12px;
+}
+
+article.document ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-top: 6px;
+}
+
+article.document li {
+  margin-bottom: 10px;
+}
+
+article.document em {
+  font-style: italic;
+}
+
+article.document strong {
+  font-weight: 600;
+}
+
+article.document .note {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  margin-left: 1.5rem;
+  font-style: italic;
+  color: #333;
+}
+
+article.document p {
+  margin: 6px 0 12px 0;
+}
